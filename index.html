@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(174, 32, 139);
+            text-align: center;
+            margin: 0;
+        }
+        nav {
+            background-color: rgb(0, 0, 0);
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            background-color: rgb(75, 0, 130);
+            padding: 12px 20px;
+            margin: 5px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+        nav a:hover {
+            background-color: rgb(255, 0, 130);
+            color: rgb(255, 255, 255);
+        }
+
+
+        .titulo-logo {
+            text-align: center;
+            font-family: 'Arial Black', Impact, sans-serif;
+            font-size: 54px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: rgb(255, 255, 255);
+            text-shadow: 
+                3px 3px 0px rgb(219, 39, 119),
+                6px 6px 0px rgb(20, 20, 20);
+            margin-top: 35px;
+            margin-bottom: 25px;
+        }
+
+        .portada {
+            background-color: rgba(0, 0, 0, 0.75);
+            max-width: 900px;
+            margin: 0 auto 40px auto;
+            padding: 30px;
+            border-radius: 15px;
+            border: 3px solid rgb(159, 232, 250);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+            color: rgb(255, 255, 255);
+        }
+        .portada img {
+    width: 220px;        
+    height: 220px;        
+    object-fit: contain;  
+    background-color: #ffffff; 
+    border-radius: 50%;   
+    padding: 15px;         
+    margin-bottom: 20px;
+    border: 3px solid rgb(255, 0, 130);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+        
+        
+        .portada h3 {
+            font-size: 26px;
+            color: rgb(159, 232, 250);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin: 10px 0;
+        }
+        .portada p {
+            font-size: 17px;
+            line-height: 1.6;
+            color: rgb(240, 240, 240);
+            max-width: 700px;
+            margin: 0 auto 25px auto;
+        }
+
+        .seccion-explora {
+            max-width: 960px;
+            margin: 0 auto 60px auto;
+            padding: 0 20px;
+        }
+        .subtitulo-explora {
+            font-family: 'Arial Black', Impact, sans-serif;
+            color: rgb(255, 255, 255);
+            font-size: 28px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+            margin-bottom: 25px;
+        }
+        .grid-secciones {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        .tarjeta-seccion {
+            background-color: rgba(0, 0, 0, 0.8);
+            border: 2px solid rgb(159, 232, 250);
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            transition: transform 0.3s;
+        }
+        .tarjeta-seccion:hover {
+            transform: translateY(-5px);
+            border-color: rgb(255, 0, 130);
+        }
+        .tarjeta-seccion h4 {
+            font-family: 'Arial Black', Impact, sans-serif;
+            color: rgb(159, 232, 250);
+            font-size: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin: 0 0 12px 0;
+        }
+        .tarjeta-seccion p {
+            color: rgb(235, 235, 235);
+            font-size: 15px;
+            line-height: 1.5;
+            margin: 0 0 20px 0;
+        }
+        .boton-portada {
+            display: inline-block;
+            background-color: rgb(255, 0, 130);
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            font-weight: bold;
+            padding: 12px 25px;
+            border-radius: 10px;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: 0.3s;
+        }
+        .boton-portada:hover {
+            background-color: rgb(159, 232, 250);
+            color: rgb(0, 0, 0);
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sport Fitness - Inicio</title>
+</head>
+<body>
+    <nav>
+        <a href="Index.html">Inicio</a>
+        <a href="conocenos.html">conocenos</a>
+        <a href="galeria.html">Galeria de servicios</a>
+        <a href="listas.html">Precios de servicios</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <h2 class="titulo-logo">Sport Fitness</h2>
+
+    <div class="portada">
+        <img src="img/logo.jpeg" alt="Imagen principal Sport Fitness">
+        <h3>Transforma tu cuerpo, supera tus límites</h3>
+        <p>Bienvenido a Sport Fitness. Contamos con área de pesas, suplementación deportiva, bebidas energéticas y el mejor ambiente 
+            para alcanzar tus metas.</p>
+        <a href="listas.html" class="boton-portada">Ver Precios y Productos</a>
+    </div>
+
+    <div class="seccion-explora">
+        <h3 class="subtitulo-explora">Explora Todo Lo Que Tenemos Para Ti</h3>
+        
+        <div class="grid-secciones">
+
+            <div class="tarjeta-seccion">
+                <div>
+                    <h4>Conócenos</h4>
+                    <p>Descubre quiénes somos, nuestra filosofía de entrenamiento y por qué somos el mejor espacio para impulsar 
+                        tu disciplina y resultados día con día.</p>
+                </div>
+                <a href="conocenos.html" class="boton-portada">Conocer más</a>
+            </div>
+
+            <div class="tarjeta-seccion">
+                <div>
+                    <h4>Galería de Servicios</h4>
+                    <p>Echa un vistazo a nuestras instalaciones, aparatos de entrenamiento, vitrina de suplementos y el
+                         ambiente energético que se vive en el gimnasio.</p>
+                </div>
+                <a href="galeria.html" class="boton-portada">Ver Galería</a>
+            </div>
+
+            <div class="tarjeta-seccion">
+                <div>
+                    <h4>Precios y Suplementos</h4>
+                    <p>Consulta nuestra lista completa de proteínas, pre-entrenos, barras energéticas, bebidas hidratantes y 
+                        accesorios disponibles en recepción.</p>
+                </div>
+                <a href="listas.html" class="boton-portada">Ver Precios</a>
+            </div>
+
+            <div class="tarjeta-seccion">
+                <div>
+                    <h4>Contacto</h4>
+                    <p>¿Tienes alguna duda o quieres 
+                        enviarnos tus comentarios? Escríbenos directamente a través de nuestro 
+                        formulario y con gusto te atenderemos.</p>
+                                   </div>
+                <a href="contacto.html" class="boton-portada">Contáctanos</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
